@@ -5,9 +5,104 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+nav {
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.head {
+  color: beige;
+  font-weight: 700;
+  font-size: 1.4em;
+  margin-left: 10px;
+}
+
+.body {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  margin-right: 20px;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Toggle button styles */
+.toggle-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.toggle-btn div {
+  width: 30px;
+  height: 3px;
+  background-color: beige;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+.active, li:hover{
+  background-color: rgb(18, 114, 143);
+  border-radius: 15px;
+}
+ 
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .body {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: blue;
+  }
+  
+  .body.show {
+    display: flex;
+    margin-top: 45px;
+    background-color: aquamarine;
+  }
+  
+  .toggle-btn {
+    display: flex;
+    margin-right: 10px;
+  }
+  
+  .body ul {
+    flex-direction: column;
+    padding: 0;
+  }
+  
+  .body li {
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
