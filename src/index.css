@@ -16,6 +16,9 @@ code {
   background-image: url('./public/Images/porsche-4795517_1280.jpg');
   background-size: cover;
   background-position: center;
+  background-Repeat: 'no-repeat';
+    height: '100vh';
+    width: '100%';
 }
 nav {
   background-color: blue;
