@@ -12,6 +12,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.App{
+  background-image: url('./public/Images/porsche-4795517_1280.jpg');
+  background-size: cover;
+  background-position: center;
+}
 nav {
   background-color: blue;
   display: flex;
