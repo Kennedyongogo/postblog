@@ -108,3 +108,126 @@ a {
     margin-bottom: 10px;
   }
 }
+.image-container {
+  text-align: center; /* Center the heading and images */
+  padding: 20px; /* Add some padding around the container */
+}
+
+/* Heading styling */
+.image-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Flexbox container for images */
+.images-wrapper {
+  display: flex; /* Align items in a row */
+  justify-content: center; /* Center the images horizontally */
+  gap: 20px; /* Space between items */
+  flex-wrap: nowrap; /* Prevent wrapping to the next line */
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+  align-items: stretch;
+  width: 100%;
+}
+
+/* Style for each image block */
+.image {
+  background-color: #f9f9f9; /* Light background for each image block */
+  border: 1px solid #ddd; /* Light border for each image block */
+  border-radius: 8px; /* Rounded corners for each image block */
+  overflow: hidden; /* Hide any overflow from the image */
+  text-align: center; /* Center content inside each image block */
+  width: 250px; /* Fixed width for the image block */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for each image block */
+  flex-shrink: 0; /* Prevent images from shrinking */
+}
+
+
+/* Style for images */
+.image img {
+  width: 100%; /* Make images fill the container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove any extra space below images */
+}
+
+/* Styling for headings inside image blocks */
+.image h2 {
+  font-size: 1.25rem;
+  margin: 10px 0;
+}
+
+/* Button styling */
+.image button {
+  background-color: #007bff; /* Blue background color */
+  border: none; /* Remove default border */
+  color: white; /* White text color */
+  padding: 10px 20px; /* Add padding */
+  font-size: 1rem; /* Adjust font size */
+  border-radius: 5px; /* Rounded corners for button */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-bottom: 10px; /* Space between button and heading */
+}
+
+/* Button hover effect */
+.image button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .images-wrapper {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .image {
+    width: 100%; /* Full width on smaller screens */
+    max-width: 300px; /* Maximum width for image blocks */
+  }
+}
+.car-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  padding: 20px;
+  text-align: center; /* Center text */
+}
+
+/* Style for the heading */
+.car-details h1 {
+  margin-bottom: 20px;
+  font-size: 2rem; /* Adjust as needed */
+}
+
+/* Style for the image */
+.car-details img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  max-height: 50vh; /* Image covers less than half of the viewport height */
+  object-fit: cover; /* Ensure the image covers the space well */
+  margin-bottom: 20px;
+}
+
+/* Style for the paragraph */
+.car-details p {
+  max-width: 800px; /* Adjust max-width as needed */
+  margin: 0 auto; /* Center the paragraph */
+  line-height: 1.6; /* Improve readability */
+  font-size: 1rem; /* Adjust as needed */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .car-details h1 {
+    font-size: 1.5rem; /* Adjust heading size for smaller screens */
+  }
+
+  .car-details img {
+    max-height: 40vh; /* Reduce image height on smaller screens */
+  }
+
+  .car-details p {
+    font-size: 0.9rem; /* Adjust paragraph text size for smaller screens */
+  }
+}
