@@ -2,15 +2,17 @@ import React, { useState } from 'react';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  
+  
   const handleToggle = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+ 
   return (
     <nav>
       <div className="head">
-        <h1>Code Mafia</h1>
+        <h1>Vintage Car Collection</h1>
       </div>
       <div className="toggle-btn" onClick={handleToggle}>
         <div></div>
