@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="head">
-        <h1>Vintage Car Collection</h1>
+        <h1>Carl Car Collection</h1>
       </div>
       <div className="toggle-btn" onClick={handleToggle}>
         <div></div>

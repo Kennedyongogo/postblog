@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import React from 'react';
 const Home = () => {
     return ( 
+        <div className='cars'>
         <div className="image-container">
             <h1>Vintage Cars</h1>
             < div className="images-wrapper">
@@ -38,6 +39,47 @@ const Home = () => {
                 </Link>
             </div>
             </div>
+            </div>
+            <div className='image-container'>
+
+            <h1>Sport Cars</h1>
+            < div className="images-wrapper">
+
+            <div className="image">
+            <img src="/images/ferrari-721858_1280.jpg" alt="sport car" />
+                <h2>Ferrari</h2>
+                <Link to='/car/5'>
+                <button>View More Details</button>
+                </Link>
+            </div>
+
+            <div className="image">
+            <img src="/images/lamborghini-4815249_1280.jpg" alt="sport car" />
+                <h2>Lamborghini</h2>
+                <Link to='/car/6'>
+                <button>View More Details</button>
+                </Link>
+            </div>
+
+            <div className="image">
+            <img src="/images/bmw-4565066_1280.jpg" alt="sport car" />
+                <h2>BMW</h2>
+                <Link to='/car/7'>
+                <button>View More Details</button>
+                </Link>
+            </div>
+
+            <div className="image">
+            <img src="/images/porsche-4795517_1280.jpg" alt=" car" />
+                <h2>Porsche</h2>
+                <Link to='/car/8'>
+                <button>View More Details</button>
+                </Link>
+            </div>
+            </div>
+            
+
+        </div>
         </div>
      );
 }
