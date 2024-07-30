@@ -299,7 +299,7 @@ a {
 @media (max-width: 480px) {
   .search-container{
     padding: 0 5px;
-    position: fixed;
+    position: absolute;
   }
   .search-icon input {
     font-size: 12px; /* Further reduce font size */
