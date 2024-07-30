@@ -9,24 +9,8 @@ const Contact = () => {
         return <p>Thanks for Contacting Carl Car Collection</p>;
     }
     return ( 
-        <div>
-            <h1>Contact Carl Car Collection</h1>
-            <a 
-      href={facebookUrl}
-      target="_blank"
-      rel="noopener noreferrer"
-      style={{
-        textDecoration: 'none', 
-      }}
-    >
-      <FaFacebook 
-        style={{
-          color: '#4267B2', // Facebook blue
-          fontSize: '24px', // Adjust size as needed
-          transition: 'color 0.3s ease',
-        }}
-      />
-    </a>
+        <div className='container'>
+            <h1 className='heading'>Contact Carl Car Collection</h1>   
     <form onSubmit={handleSubmit}>
       <label htmlFor="email">
         Email Address
@@ -36,6 +20,7 @@ const Contact = () => {
         type="email" 
         name="email"
         placeholder='Enter Email'
+        className='input'
       />
       <ValidationError 
         prefix="Email" 
@@ -47,19 +32,22 @@ const Contact = () => {
       </label>
       <input
         id="phone"
-        type="phone" 
+        type="tel" 
         name="Phone"
         placeholder='Enter Phone Number'
+        className='input'
       />
       <ValidationError 
         prefix="Phone" 
         field="phone"
         errors={state.errors}
       />
+        <label htmlFor="message">Message</label>
       <textarea
         id="message"
         name="message"
         placeholder='Type Message'
+        className='input'
       />
       <ValidationError 
         prefix="Message" 
@@ -69,7 +57,20 @@ const Contact = () => {
       <button type="submit" disabled={state.submitting}>
         Submit
       </button>
+      <div>
+        <p>Phone : 0798757460 </p>
+      </div>
     </form>
+    <a 
+      href={facebookUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{
+        textDecoration: 'none', 
+      }}
+    >
+      <FaFacebook className='icon'/>
+    </a>
         </div>
      );
 }
