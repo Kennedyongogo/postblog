@@ -312,3 +312,63 @@ a {
     margin-left: 4px; /* Adjust margin */
   }
 } 
+.service-container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Styling for the heading */
+.service-container h1 {
+  margin-bottom: 20px;
+  font-size: 2rem; /* Adjust size as needed */
+}
+
+/* Flex container for the service rows */
+.service-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Space between items */
+}
+
+/* Styling for each service block */
+.service {
+  flex: 1 1 calc(33.333% - 40px); /* 3 items per row with margin */
+  max-width: calc(33.333% - 40px); /* Ensure consistent size */
+  box-sizing: border-box; /* To include padding and border in the element's total width and height */
+  text-align: center;
+  padding: 10px;
+}
+
+/* Ensure images are the same size and maintain aspect ratio */
+.service img {
+  width: 100%; /* Ensure images fit the container */
+  height: 200px; /* Fixed height */
+  object-fit: cover; /* Cover ensures the image fills the container */
+  border-radius: 8px; /* Optional: rounded corners */
+}
+
+.service h2 {
+  margin: 10px 0;
+  font-size: 1.5rem; /* Adjust size as needed */
+}
+
+.service p {
+  font-size: 1rem; /* Adjust size as needed */
+  color: #555; /* Adjust color as needed */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .service {
+      flex: 1 1 calc(50% - 40px); /* 2 items per row on medium screens */
+      max-width: calc(50% - 40px);
+  }
+}
+
+@media (max-width: 480px) {
+  .service {
+      flex: 1 1 100%; /* 1 item per row on small screens */
+      max-width: 100%;
+  }
+}
