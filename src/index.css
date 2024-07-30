@@ -300,9 +300,7 @@ a {
   .search-container{
     padding: 0 5px;
   }
-  .search-icon{
-    margin-top: 50px;
-  }
+  
   .search-icon input {
     font-size: 12px; /* Further reduce font size */
     padding: 4px;    /* Adjust padding */
