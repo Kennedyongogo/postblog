@@ -303,7 +303,7 @@ a {
   .search-icon input {
     font-size: 12px; /* Further reduce font size */
     padding: 4px;    /* Adjust padding */
-    margin-top: 20px;
+    margin-top: 60px;
   }
 
   .search-icon .fa-search {
