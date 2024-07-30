@@ -118,6 +118,28 @@ a {
     font-size: 1.2em;
   }
 }
+@media (min-width: 1200px) {
+  .body {
+    display: flex;
+    flex-direction: row; /* Ensure horizontal layout */
+    width: auto; /* Adjust width to fit the content */
+    position: static; /* Remove absolute positioning */
+    background-color: blue;
+    margin: 0 auto; /* Center the content */
+    padding: 0 20px; /* Add padding for better spacing */
+  }
+  
+  .body ul {
+    flex-direction: row;
+  }
+  
+  .body li {
+    margin-right: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.3em;
+  }
+}
 .image-container {
   text-align: center; /* Center the heading and images */
   padding: 20px; /* Add some padding around the container */
