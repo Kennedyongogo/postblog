@@ -33,7 +33,7 @@ const Services = () => {
             <div className="service" >
                 <img src="/images/istockphoto-1413498884-612x612.jpg" alt="Six" />
                 <h2>Car Collection</h2>
-                <p>this is collection of various cars</p>
+                <p>This is collection of various cars</p>
             </div>
             </div>
         </div>
