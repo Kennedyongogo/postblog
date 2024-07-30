@@ -22,7 +22,7 @@ nav {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  
+  position: relative;
 }
 
 .head {
@@ -62,6 +62,7 @@ a {
   flex-direction: column;
   justify-content: center;
   cursor: pointer;
+  margin-right: 10px;
 }
 
 .toggle-btn div {
@@ -87,6 +88,7 @@ a {
     top: 60px;
     left: 0;
     background-color: blue;
+    z-index: 1000;
   }
   
   .body.show {
@@ -106,12 +108,14 @@ a {
   .body ul {
     flex-direction: column;
     padding: 0;
+    margin: 0;
   }
   
   .body li {
     margin-right: 0;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 1.2em;
   }
 }
 .image-container {
