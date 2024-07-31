@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+
 
 const servicesData = [
     { id: 1, name: 'Car Painting', price: 12000, description: 'Restoring a damaged vehicle...', imgSrc: '/images/istockphoto-155161419-612x612.jpg' },
