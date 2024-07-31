@@ -35,6 +35,8 @@ nav {
 .body {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  flex: 1;
 }
 
 ul {
@@ -655,5 +657,25 @@ button:disabled {
 
   .coordinates iframe {
       height: 250px;
+  }
+}
+@media (max-width: 600px) {
+  .basket-container {
+    width: 100%;
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .basket-container h2 {
+    font-size: 1.5em;
+  }
+
+  .basket-container h3 {
+    font-size: 1.2em;
+  }
+
+  .basket-container button {
+    padding: 8px 12px;
+    font-size: 0.9em;
   }
 }
